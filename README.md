@@ -6,7 +6,6 @@ A lightweight JSON validation utility built with React and Vite.
 - Real-time JSON syntax validation
 - Error highlighting and suggestions
 - Lightweight (~20KB minified)
-- Zero dependencies
 
 ## Getting Started
 
