@@ -119,6 +119,8 @@ function App() {
     if (!text) {
       setStatus('Please enter JSON.');
       setStatusType('danger');
+      // Scroll to status panel
+      document.getElementById('status')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       return false;
     }
     try {
@@ -126,12 +128,16 @@ function App() {
       window.jsonlint.parse(text);
       setStatus('Valid JSON ✓');
       setStatusType('success');
+      // Scroll to status panel
+      document.getElementById('status')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       return true;
     } catch (e) {
       const { line, col } = extractLineCol(e.message);
       setStatus('Invalid JSON: ' + e.message);
       setStatusType('danger');
       if (line !== null) scrollToError(line, col || 0);
+      // Scroll to status panel
+      document.getElementById('status')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       return false;
     }
   };

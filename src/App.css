@@ -40,3 +40,41 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Ensure consistent button sizing */
+button {
+  min-height: 40px;
+  font-size: 14px;
+  padding: 8px 12px;
+  min-width: 100px;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+/* Primary button sizing consistency */
+button.primary {
+  min-height: 40px;
+  font-size: 14px;
+  padding: 8px 12px;
+  min-width: 100px;
+  box-sizing: border-box;
+}
+
+/* Mobile button sizing */
+@media (max-width: 767px) {
+  button {
+    min-height: 36px;
+    font-size: 14px;
+    padding: 6px 10px;
+    min-width: 90px;
+    flex: 1 1 90px;
+  }
+  
+  button.primary {
+    min-height: 36px;
+    font-size: 14px;
+    padding: 6px 10px;
+    min-width: 90px;
+  }
+}
