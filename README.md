@@ -40,3 +40,5 @@ npm run build
 └── package.json         # Project dependencies
 ```
 
+## Screenshots
+<img width="1231" height="897" alt="image" src="https://github.com/user-attachments/assets/9837753f-eed6-4429-9e78-68bde1295153" />
